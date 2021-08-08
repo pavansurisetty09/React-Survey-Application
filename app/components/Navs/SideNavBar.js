@@ -2,7 +2,7 @@ import React from 'react';
 
 const SideNavBar = () => (
   <div>
-    <h1>Hi from SideNavBar</h1>
+    <h1>Hi from Paramesh's SideNavBar</h1>
   </div>
 );
 
