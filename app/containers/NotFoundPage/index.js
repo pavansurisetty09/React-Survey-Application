@@ -6,14 +6,21 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-
-import messages from './messages';
-
+import './pagenotfound.css';
 export default function NotFound() {
   return (
-    <h1>
-      <FormattedMessage {...messages.header} />
-    </h1>
+    <section id="not-found">
+      <div id="title"> 404 Error Page Not Found</div>
+      <div className="circles">
+        <p>
+          404
+          <br />
+          <small>PAGE NOT FOUND</small>
+        </p>
+        <span className="circle big" />
+        <span className="circle med" />
+        <span className="circle small" />
+      </div>
+    </section>
   );
 }

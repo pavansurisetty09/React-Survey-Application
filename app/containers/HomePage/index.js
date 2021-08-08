@@ -6,13 +6,36 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import { Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  margin: auto;
+  word-break: normal;
+  width: 90px;
+`;
+
+const Title = styled.h1`
+  text-align: center;
+  color: red;
+`;
 
 export default function HomePage() {
   return (
-    <h1>
-      <FormattedMessage {...messages.header} />
-    </h1>
+    <div>
+      <Title>Covid Survey</Title>
+      <Wrapper>
+        <Link to="/home/surveys">
+          <Button
+            className="home-btn"
+            style={{ margin: 'auto' }}
+            color="primary"
+          >
+            Open Surveys
+          </Button>
+        </Link>
+      </Wrapper>
+    </div>
   );
 }
